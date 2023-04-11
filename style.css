@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body {
+  margin: 2% 5%;
+  font-family: 'Lato', sans-serif;
+}
+
+@media print and (orientation: landscape) {
+  body {
+    margin: 5% 2%;
+  }
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 19px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 17px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 14px;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.logo-container {
+  width: 35%;
+}
+
+.logo-container img {
+  max-width: 100%;
+}
+
+.text-container h2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+  font-size: 23px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.info-container {
+  text-align: left;
+  width: 75%;
+}
+
+.info-container h3 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.info-container h4 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.info-container p {
+  margin-bottom: 5px;
+}
+
+@media print and (orientation: landscape) {
+  .header-container {
+    padding: 10px;
+    margin: 0;
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pagination a,
+.pagination span {
+  padding: 10px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #333;
+}
+
+.pagination a:hover {
+  background-color: #ddd;
+}
+
+.pagination .active {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+.total-familias, .total-individuos {
+  padding: 2px;
+  margin-bottom: 0px;
+}
+
+.total-familias h6, .total-individuos h6 {
+  margin: 0;
+  text-align: left;
+}
