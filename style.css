@@ -5,9 +5,126 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+
+
 @media print and (orientation: landscape) {
   body {
-    margin: 15% 5%;
+    margin: 1% 2% 2%;
+    font-family: 'Lato', sans-serif;
+  }
+
+  @page {
+    size: landscape;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 17px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  h6 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  header {
+    margin-bottom: 40px;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcfcfc;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  .logo-container {
+    width: 35%;
+  }
+
+  .logo-container img {
+    max-width: 100%;
+  }
+
+  .text-container h2 {
+    font-size: 28px;
+    margin: 0;
+  }
+
+  .text-center {
+    text-align: center;
+    font-size: 23px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .info-container {
+    text-align: left;
+    width: 75%;
+  }
+
+  .info-container h3 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .info-container h4 {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .info-container p {
+    margin-bottom: 5px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 90%;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+  }
+
+  th {
+    background-color: #f4f4f4;
+    padding: 8px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+
+  td {
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
   }
 }
 
@@ -47,11 +164,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: #fcfcfc;
   padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .logo-container {
@@ -69,7 +186,7 @@ header {
 
 .text-center {
   text-align: center;
-  font-size: 23px;
+  font-size: 20px;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -80,85 +197,73 @@ header {
 }
 
 .info-container h3 {
-  font-size: 24px;
+  font-size: 16px;
   margin: 0;
   font-weight: bold;
 }
 
 .info-container h4 {
+  font-size: 15px;
   margin-top: 5px;
   margin-bottom: 0;
 }
 
 .info-container p {
+  font-size: 14px;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 
-@media print and (orientation: landscape) {
-  .header-container {
-    padding: 10px;
-    margin: 0;
-  }
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f2f2f2;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+.table-container {
+  overflow-x: auto;
 }
 
 table {
-  width: 100%;
+  width: 90%;
   border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
-th,
-td {
-  padding: 10px;
-  text-align: left;
-  border: 1px solid #ddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  font-size: 13px;
 }
 
 th {
-  background-color: #f2f2f2;
+  background-color: #f4f4f4;
+  padding: 8px;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-.pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+td {
+  padding: 8px;
 }
 
-.pagination a,
-.pagination span {
-  padding: 10px;
-  margin: 0 5px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  color: #333;
+tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
-.pagination a:hover {
-  background-color: #ddd;
-}
-
-.pagination .active {
-  background-color: #333;
-  color: #fff;
-  border-color: #333;
-}
-
-.total-familias, .total-individuos {
-  padding: 2px;
-  margin-bottom: 0px;
-}
-
-.total-familias h6, .total-individuos h6 {
+.total-familias p,
+.total-individuos p {
   margin: 0;
   text-align: left;
+}
+
+.total-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.total-familias,
+.total-individuos {
+  margin-left: 70px;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+.footer-container {
+  text-align: center;
 }
