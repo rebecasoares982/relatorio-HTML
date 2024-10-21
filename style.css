@@ -127,11 +127,11 @@ body {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 23px;
 }
 
 h2 {
-  font-size: 19px;
+  font-size: 11px;
 }
 
 h3 {
@@ -166,7 +166,7 @@ header {
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
-  max-width: 80%;
+  max-width: 90%;
 }
 
 .logo-container {
@@ -184,20 +184,37 @@ header {
 
 .text-center {
   text-align: center;
-  font-size: 20px;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  font-size: 23px;
+}
+
+.margin-b {
+  margin-bottom: 35px !important;
 }
 
 .info-container {
   text-align: left;
   width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .info-container h3 {
   font-size: 16px;
   margin: 0;
   font-weight: bold;
+}
+
+.company-info {
+  max-width: 50%;
+}
+
+.researcher-info {
+  max-width: 45%;
+  text-align: right;
 }
 
 .info-container h4 {
@@ -217,7 +234,7 @@ header {
 }
 
 table {
-  width: 90%;
+  width: 95%;
   border-collapse: collapse;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px auto;
@@ -240,28 +257,18 @@ tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
-.total-familias p,
-.total-individuos p {
-  margin: 0;
-  text-align: left;
+.info-clients {
+  width: 95%;
+  margin: auto;
 }
-
-.total-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-
-.total-familias,
-.total-individuos {
-  margin-left: 70px;
-}
+ 
 
 footer {
   margin-top: 40px;
+  color: #3a3a3a;
 }
 
 .footer-container {
   text-align: center;
 }
+ 
